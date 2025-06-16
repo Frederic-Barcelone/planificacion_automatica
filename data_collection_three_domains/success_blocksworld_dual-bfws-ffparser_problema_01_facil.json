@@ -1,0 +1,32 @@
+{
+  "planner": "dual-bfws-ffparser",
+  "problem": "problema_01_facil.pddl",
+  "timestamp": "2025-06-13T15:37:06.460414",
+  "solved": true,
+  "time": 3.2379133701324463,
+  "plan": [
+    "(pick-up c)",
+    "(stack c d)",
+    "(pick-up b)",
+    "(stack b a)",
+    "(unstack c d)",
+    "(stack c b)",
+    "(pick-up d)",
+    "(stack d c)"
+  ],
+  "plan_length": 8,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run dual-bfws-ffparser -- domain problem plan",
+      "output": {
+        "plan": "(PICK-UP C)\n(STACK C D)\n(PICK-UP B)\n(STACK B A)\n(UNSTACK C D)\n(STACK C B)\n(PICK-UP D)\n(STACK D C)\n"
+      },
+      "output_type": "generic",
+      "stderr": "",
+      "stdout": " --- OK.\n Match tree built with 40 nodes.\n\nPDDL problem description loaded: \n\tDomain: BLOCKS\n\tProblem: BLOCKS-4-0\n\t#Actions: 40\n\t#Fluents: 29\nGoals found: 3\nGoals_Edges found: 3\nStarting search with 1-BFWS...\n--[3 / 0]--\n--[3 / 1]--\n--[3 / 3]--\n--[2 / 0]--\n--[2 / 4]--\n--[1 / 0]--\n--[1 / 4]--\n--[1 / 5]--\n--[1 / 6]--\n--[0 / 0]--\n--[0 / 4]--\nTotal time: 0.000304001\nNodes generated during search: 95\nNodes expanded during search: 54\nPlan found with cost: 8\nFast-BFS search completed in 0.000304001 secs\n"
+    },
+    "status": "ok"
+  },
+  "error": null,
+  "domain": "blocksworld"
+}

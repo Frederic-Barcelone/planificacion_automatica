@@ -1,0 +1,25 @@
+{
+  "domain": "barman",
+  "planner": "dual-bfws-ffparser",
+  "problem": "instance-7.pddl",
+  "timestamp": "2025-06-14T05:34:35.723935",
+  "timeout_used": 10800,
+  "solved": false,
+  "time": 10876.835458755493,
+  "plan": [],
+  "plan_length": 0,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run dual-bfws-ffparser -- domain problem plan",
+      "output": {
+        "plan": ""
+      },
+      "output_type": "generic",
+      "stderr": "",
+      "stdout": " --- OK.\n Match tree built with 3318 nodes.\n\nPDDL problem description loaded: \n\tDomain: BARMAN\n\tProblem: PROB\n\t#Actions: 3318\n\t#Fluents: 444\nGoals found: 15\nGoals_Edges found: 15\nStarting search with 1-BFWS...\n--[15 / 0]--\n--[15 / 1]--\n--[15 / 3]--\n--[14 / 0]--\n--[14 / 3]--\n--[14 / 4]--\n--[14 / 5]--\n--[14 / 7]--\n--[14 / 8]--\n--[14 / 9]--\n--[14 / 10]--\n--[14 / 11]--\n--[14 / 12]--\n--[14 / 13]--\n--[14 / 14]--\n--[14 / 15]--\n--[14 / 16]--\nTotal time: 0.030696\nNodes generated during search: 3267\nNodes expanded during search: 3207\nPlan found with cost: NOTFOUND\nFast-BFS search completed in 0.030696 secs\nStarting search with BFWS(novel,land,h_(add)ff)...\nLandmarks found: 33\nLandmarks_Edges found: 95\n--[95 / 4294967295]--\n--[95 / 478]--\n--[95 / 282]--\n--[95 / 281]--\n--[94 / 281]--\n--[94 / 199]--\n--[93 / 199]--\n--[93 / 161]--\n--[92 / 161]--\n--[92 / 160]--\n--[91 / 160]--\n--[91 / 144]--\n--[88 / 144]--\n--[85 / 144]--\n--[82 / 144]--\n--[82 / 141]--\n--[82 / 140]--\n--[81 / 140]--\n--[81 / 138]--\n--[78 / 138]--\n--[75 / 138]--\n--[75 / 124]--\n--[75 / 120]--\n--[75 / 104]--\n--[75 / 97]--\n--[72 / 97]--\n--[69 / 97]--\n--[66 / 97]--\n--[65 / 97]--\n--[64 / 97]--\n--[64 / 85]--\n--[63 / 85]--\n--[63 / 71]--\n--[60 / 71]--\n--[57 / 71]--\n--[56 / 71]--\n--[56 / 68]--\n--[53 / 68]--\n--[50 / 68]--\n--[49 / 68]--\n--[49 / 61]--\n--[49 / 59]--\n--[49 / 53]--\n--[47 / 53]--\n--[44 / 53]--\n--[43 / 53]--\n--[43 / 51]--\n"
+    },
+    "status": "ok"
+  },
+  "error": "Extended timeout reached",
+  "progress_info": {}
+}

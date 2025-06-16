@@ -1,0 +1,62 @@
+{
+  "domain": "logistics",
+  "planner": "optic",
+  "problem": "probLOGISTICS-9-0.pddl",
+  "timestamp": "2025-06-14T13:23:19.785267",
+  "timeout_used": 420,
+  "solved": true,
+  "time": 33.06406092643738,
+  "plan": [
+    "(load-truck obj32 tru3 pos3)",
+    "(load-truck obj31 tru3 pos3)",
+    "(load-truck obj23 tru2 pos2)",
+    "(load-truck obj22 tru2 pos2)",
+    "(load-truck obj21 tru2 pos2)",
+    "(load-truck obj13 tru1 pos1)",
+    "(drive-truck tru2 pos2 apt2 cit2)",
+    "(drive-truck tru3 pos3 apt3 cit3)",
+    "(drive-truck tru1 pos1 apt1 cit1)",
+    "(unload-truck obj23 tru2 apt2)",
+    "(unload-truck obj22 tru2 apt2)",
+    "(unload-truck obj21 tru2 apt2)",
+    "(unload-truck obj32 tru3 apt3)",
+    "(unload-truck obj13 tru1 apt1)",
+    "(load-airplane obj23 apn1 apt2)",
+    "(load-airplane obj22 apn1 apt2)",
+    "(load-airplane obj21 apn1 apt2)",
+    "(fly-airplane apn1 apt2 apt3)",
+    "(unload-airplane obj23 apn1 apt3)",
+    "(load-airplane obj32 apn1 apt3)",
+    "(unload-truck obj31 tru3 apt3)",
+    "(load-truck obj23 tru3 apt3)",
+    "(fly-airplane apn1 apt3 apt1)",
+    "(drive-truck tru3 apt3 pos3 cit3)",
+    "(unload-airplane obj32 apn1 apt1)",
+    "(unload-airplane obj22 apn1 apt1)",
+    "(unload-airplane obj21 apn1 apt1)",
+    "(load-airplane obj13 apn1 apt1)",
+    "(unload-truck obj23 tru3 pos3)",
+    "(fly-airplane apn1 apt1 apt3)",
+    "(load-truck obj32 tru1 apt1)",
+    "(load-truck obj22 tru1 apt1)",
+    "(unload-airplane obj13 apn1 apt3)",
+    "(drive-truck tru1 apt1 pos1 cit1)",
+    "(unload-truck obj32 tru1 pos1)",
+    "(unload-truck obj22 tru1 pos1)"
+  ],
+  "plan_length": 36,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run optic -- domain problem >> plan",
+      "output": {
+        "plan": "Number of literals: 111\nConstructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nPost filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nNo semaphore facts found, returning\n\u001b[01;34mNo analytic limits found, not considering limit effects of goal-only operators\u001b[00m\nInitial heuristic = 33.000, admissible cost estimate 0.000\nb (32.000 | 0.000)b (31.000 | 0.000)b (30.000 | 0.000)b (29.000 | 0.000)b (28.000 | 0.000)b (27.000 | 0.001)b (26.000 | 0.001)b (25.000 | 0.002)b (24.000 | 0.002)b (23.000 | 0.002)b (22.000 | 0.003)b (21.000 | 0.003)b (20.000 | 0.003)b (19.000 | 0.004)b (18.000 | 0.005)b (17.000 | 0.005)b (16.000 | 0.005)b (15.000 | 0.005)b (14.000 | 0.006)b (13.000 | 0.007)b (12.000 | 0.008)b (11.000 | 0.008)b (10.000 | 0.008)b (9.000 | 0.008)b (8.000 | 0.008)b (7.000 | 0.008)b (6.000 | 0.008)b (5.000 | 0.008)b (4.000 | 0.008)b (3.000 | 0.009)b (2.000 | 0.009)b (1.000 | 0.010)(G)\n; No metric specified - using makespan\n\n; Plan found with metric 0.010\n; States evaluated so far: 121\n; States pruned based on pre-heuristic cost lower bound: 0\n; Time 0.15\n0.000: (load-truck obj32 tru3 pos3)  [0.001]\n0.000: (load-truck obj31 tru3 pos3)  [0.001]\n0.000: (load-truck obj23 tru2 pos2)  [0.001]\n0.000: (load-truck obj22 tru2 pos2)  [0.001]\n0.000: (load-truck obj21 tru2 pos2)  [0.001]\n0.000: (load-truck obj13 tru1 pos1)  [0.001]\n0.001: (drive-truck tru2 pos2 apt2 cit2)  [0.001]\n0.001: (drive-truck tru3 pos3 apt3 cit3)  [0.001]\n0.001: (drive-truck tru1 pos1 apt1 cit1)  [0.001]\n0.002: (unload-truck obj23 tru2 apt2)  [0.001]\n0.002: (unload-truck obj22 tru2 apt2)  [0.001]\n0.002: (unload-truck obj21 tru2 apt2)  [0.001]\n0.002: (unload-truck obj32 tru3 apt3)  [0.001]\n0.002: (unload-truck obj13 tru1 apt1)  [0.001]\n0.003: (load-airplane obj23 apn1 apt2)  [0.001]\n0.003: (load-airplane obj22 apn1 apt2)  [0.001]\n0.003: (load-airplane obj21 apn1 apt2)  [0.001]\n0.004: (fly-airplane apn1 apt2 apt3)  [0.001]\n0.005: (unload-airplane obj23 apn1 apt3)  [0.001]\n0.005: (load-airplane obj32 apn1 apt3)  [0.001]\n0.006: (unload-truck obj31 tru3 apt3)  [0.001]\n0.006: (load-truck obj23 tru3 apt3)  [0.001]\n0.006: (fly-airplane apn1 apt3 apt1)  [0.001]\n0.007: (drive-truck tru3 apt3 pos3 cit3)  [0.001]\n0.007: (unload-airplane obj32 apn1 apt1)  [0.001]\n0.007: (unload-airplane obj22 apn1 apt1)  [0.001]\n0.007: (unload-airplane obj21 apn1 apt1)  [0.001]\n0.007: (load-airplane obj13 apn1 apt1)  [0.001]\n0.008: (unload-truck obj23 tru3 pos3)  [0.001]\n0.008: (fly-airplane apn1 apt1 apt3)  [0.001]\n0.008: (load-truck obj32 tru1 apt1)  [0.001]\n0.008: (load-truck obj22 tru1 apt1)  [0.001]\n0.009: (unload-airplane obj13 apn1 apt3)  [0.001]\n0.009: (drive-truck tru1 apt1 pos1 cit1)  [0.001]\n0.010: (unload-truck obj32 tru1 pos1)  [0.001]\n0.010: (unload-truck obj22 tru1 pos1)  [0.001]\n\n * All goal deadlines now no later than 0.010\n\nResorting to best-first search\nRunning WA* with W = 5.000, not restarting with goal states\nb (32.000 | 0.000)b (31.000 | 0.000)b (30.000 | 0.000)b (29.000 | 0.000)b (28.000 | 0.000)b (27.000 | 0.000)b (26.000 | 0.001)b (25.000 | 0.002)b (24.000 | 0.002)b (23.000 | 0.002)b (22.000 | 0.003)b (21.000 | 0.003)b (20.000 | 0.003)b (19.000 | 0.004)b (18.000 | 0.005)b (17.000 | 0.005)b (16.000 | 0.005)b (15.000 | 0.005)b (14.000 | 0.006)b (13.000 | 0.007)b (12.000 | 0.008)b (11.000 | 0.008)b (10.000 | 0.008)b (9.000 | 0.008)b (8.000 | 0.008)b (7.000 | 0.008)b (6.000 | 0.008)b (5.000 | 0.008)b (4.000 | 0.008)b (3.000 | 0.009)b (2.000 | 0.009)b (1.000 | 0.010)"
+      },
+      "output_type": "log",
+      "stderr": "",
+      "stdout": ""
+    },
+    "status": "ok"
+  },
+  "error": null,
+  "progress_info": {}
+}

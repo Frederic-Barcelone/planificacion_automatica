@@ -1,0 +1,44 @@
+{
+  "planner": "optic",
+  "problem": "problema_01_facil.pddl",
+  "timestamp": "2025-06-13T15:40:31.070963",
+  "solved": true,
+  "time": 6.533718824386597,
+  "plan": [
+    "(pick-up d)",
+    "(stack d c)",
+    "(pick-up b)",
+    "(stack b a)",
+    "(unstack d c)",
+    "(put-down d)",
+    "(pick-up c)",
+    "(stack c b)",
+    "(pick-up d)",
+    "(stack d c)",
+    "(pick-up d)",
+    "(stack d c)",
+    "(pick-up b)",
+    "(stack b a)",
+    "(unstack d c)",
+    "(put-down d)",
+    "(pick-up c)",
+    "(stack c b)",
+    "(pick-up d)",
+    "(stack d c)"
+  ],
+  "plan_length": 20,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run optic -- domain problem >> plan",
+      "output": {
+        "plan": "Number of literals: 25\nConstructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nPost filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nNo semaphore facts found, returning\n\u001b[01;34mNo analytic limits found, not considering limit effects of goal-only operators\u001b[00m\nInitial heuristic = 6.000, admissible cost estimate 0.000\nb (5.000 | 0.001)b (3.000 | 0.003)b (2.000 | 0.007)b (1.000 | 0.008)(G)\n; No metric specified - using makespan\n\n; Plan found with metric 0.009\n; States evaluated so far: 13\n; States pruned based on pre-heuristic cost lower bound: 0\n; Time 0.12\n0.000: (pick-up d)  [0.001]\n0.001: (stack d c)  [0.001]\n0.002: (pick-up b)  [0.001]\n0.003: (stack b a)  [0.001]\n0.004: (unstack d c)  [0.001]\n0.005: (put-down d)  [0.001]\n0.006: (pick-up c)  [0.001]\n0.007: (stack c b)  [0.001]\n0.008: (pick-up d)  [0.001]\n0.009: (stack d c)  [0.001]\n\n * All goal deadlines now no later than 0.009\n\nResorting to best-first search\nRunning WA* with W = 5.000, not restarting with goal states\nb (4.000 | 0.001)b (3.000 | 0.003)b (2.000 | 0.003)b (1.000 | 0.004)(G)b (0.000 | 0.005)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)(G)\nProblem Unsolvable\n;;;; Solution Found\n; States evaluated: 13556\n; Cost: 0.009\n; Time 2.85\n0.000: (pick-up d)  [0.001]\n0.001: (stack d c)  [0.001]\n0.002: (pick-up b)  [0.001]\n0.003: (stack b a)  [0.001]\n0.004: (unstack d c)  [0.001]\n0.005: (put-down d)  [0.001]\n0.006: (pick-up c)  [0.001]\n0.007: (stack c b)  [0.001]\n0.008: (pick-up d)  [0.001]\n0.009: (stack d c)  [0.001]\n"
+      },
+      "output_type": "log",
+      "stderr": "",
+      "stdout": ""
+    },
+    "status": "ok"
+  },
+  "error": null,
+  "domain": "blocksworld"
+}

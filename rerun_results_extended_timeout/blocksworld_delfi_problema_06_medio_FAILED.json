@@ -1,0 +1,14 @@
+{
+  "domain": "blocksworld",
+  "planner": "delfi",
+  "problem": "problema_06_medio.pddl",
+  "timestamp": "2025-06-14T10:20:28.451747",
+  "timeout_used": 540,
+  "solved": false,
+  "time": 0.46874094009399414,
+  "plan": [],
+  "plan_length": 0,
+  "raw": null,
+  "error": "HTTP 500",
+  "progress_info": {}
+}

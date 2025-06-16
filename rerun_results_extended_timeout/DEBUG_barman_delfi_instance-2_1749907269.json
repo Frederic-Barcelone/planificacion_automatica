@@ -1,0 +1,11 @@
+{
+  "domain": "barman",
+  "planner": "delfi",
+  "problem": "instance-2.pddl",
+  "timestamp": "2025-06-14T15:21:09.277636",
+  "elapsed_time": 34.6923930644989,
+  "progress": {
+    "selected_config": "5652d59dafed-h2-simpless-dks-900masb50ksccdfp",
+    "terminated": "signal"
+  }
+}

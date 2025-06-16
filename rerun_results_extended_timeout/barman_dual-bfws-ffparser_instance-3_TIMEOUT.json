@@ -1,0 +1,25 @@
+{
+  "domain": "barman",
+  "planner": "dual-bfws-ffparser",
+  "problem": "instance-3.pddl",
+  "timestamp": "2025-06-14T03:30:21.443616",
+  "timeout_used": 7200,
+  "solved": false,
+  "time": 7450.900022029877,
+  "plan": [],
+  "plan_length": 0,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run dual-bfws-ffparser -- domain problem plan",
+      "output": {
+        "plan": ""
+      },
+      "output_type": "generic",
+      "stderr": "",
+      "stdout": " --- OK.\n Match tree built with 3318 nodes.\n\nPDDL problem description loaded: \n\tDomain: BARMAN\n\tProblem: PROB\n\t#Actions: 3318\n\t#Fluents: 444\nGoals found: 15\nGoals_Edges found: 15\nStarting search with 1-BFWS...\n--[15 / 0]--\n--[15 / 1]--\n--[15 / 3]--\n--[15 / 6]--\n--[15 / 7]--\n--[15 / 8]--\n--[15 / 9]--\n--[15 / 10]--\n--[15 / 11]--\n--[15 / 12]--\n--[15 / 13]--\n--[15 / 14]--\n--[14 / 0]--\n--[14 / 14]--\n--[13 / 0]--\n--[13 / 2]--\n--[13 / 3]--\n--[13 / 4]--\n--[13 / 5]--\n--[13 / 8]--\n--[13 / 9]--\n--[13 / 11]--\n--[13 / 13]--\n--[13 / 15]--\n--[13 / 16]--\n--[12 / 0]--\n--[12 / 16]--\n--[11 / 0]--\n--[11 / 17]--\n--[10 / 0]--\n--[10 / 18]--\n--[9 / 0]--\n--[9 / 2]--\n--[9 / 3]--\n--[9 / 4]--\n--[9 / 5]--\n--[9 / 9]--\n--[9 / 10]--\n--[9 / 11]--\n--[9 / 12]--\n--[9 / 13]--\n--[9 / 14]--\n--[9 / 15]--\n--[9 / 16]--\n--[8 / 0]--\n--[8 / 16]--\n--[8 / 17]--\n--[8 / 18]--\n--[8 / 19]--\n--[8 / 20]--\n--[8 / 21]--\n--[8 / 22]--\n--[8 / 23]--\n--[8 / 24]--\n--[8 / 25]--\nTotal time: 0.215835\nNodes generated during search: 15259\nNodes expanded during search: 14603\nPlan found with cost: NOTFOUND\nFast-BFS search completed in 0.215835 secs\nStarting search with BFWS(novel,land,h_(add)ff)...\nLandmarks found: 33\nLandmarks_Edges found: 97\n--[97 / 4294967295]--\n--[97 / 510]--\n--[97 / 300]--\n--[97 / 195]--\n--[95 / 195]--\n--[95 / 160]--\n--[94 / 160]--\n--[94 / 153]--\n--[94 / 123]--\n--[91 / 123]--\n--[88 / 123]--\n--[85 / 123]--\n--[85 / 109]--\n--[84 / 109]--\n--[84 / 107]--\n--[81 / 107]--\n--[78 / 107]--\n--[75 / 107]--\n--[74 / 107]--\n--[74 / 103]--\n--[71 / 103]--\n--[68 / 103]--\n--[65 / 103]--\n--[65 / 100]--\n--[64 / 100]--\n--[64 / 97]--\n--[64 / 77]--\n--[61 / 77]--\n--[58 / 77]--\n--[57 / 77]--\n--[57 / 68]--\n--[54 / 68]--\n--[51 / 68]--\n--[50 / 68]--\n--[50 / 65]--\n--[50 / 63]--\n--[47 / 63]--\n--[44 / 63]--\n--[43 / 63]--\n--[43 / 62]--\n--[43 / 60]--\n--[40 / 60]--\n--[37 / 60]--\n--[36 / 60]--\n--[36 / 59]--\n--[32 / 59]--\n--[29 / 59]--\n--[29 / 51]--\n--[29 / 46]--\n--[29 / 44]--\n--[28 / 44]--\n--[28 / 32]--\n--[28 / 30]--\n"
+    },
+    "status": "ok"
+  },
+  "error": "Extended timeout reached",
+  "progress_info": {}
+}

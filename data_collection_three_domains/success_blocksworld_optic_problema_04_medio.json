@@ -1,0 +1,58 @@
+{
+  "planner": "optic",
+  "problem": "problema_04_medio.pddl",
+  "timestamp": "2025-06-13T15:40:52.238772",
+  "solved": true,
+  "time": 32.547508001327515,
+  "plan": [
+    "(unstack d h)",
+    "(put-down d)",
+    "(unstack h f)",
+    "(stack h c)",
+    "(pick-up d)",
+    "(stack d f)",
+    "(unstack a g)",
+    "(put-down a)",
+    "(unstack g e)",
+    "(stack g b)",
+    "(pick-up e)",
+    "(stack e h)",
+    "(pick-up a)",
+    "(stack a g)",
+    "(unstack e h)",
+    "(put-down e)",
+    "(unstack h c)",
+    "(put-down h)",
+    "(pick-up e)",
+    "(stack e h)",
+    "(pick-up c)",
+    "(stack c a)",
+    "(unstack e h)",
+    "(put-down e)",
+    "(pick-up h)",
+    "(stack h c)",
+    "(pick-up e)",
+    "(stack e h)",
+    "(unstack d f)",
+    "(put-down d)",
+    "(pick-up f)",
+    "(stack f e)",
+    "(pick-up d)",
+    "(stack d f)"
+  ],
+  "plan_length": 34,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run optic -- domain problem >> plan",
+      "output": {
+        "plan": "Number of literals: 81\nConstructing lookup tables: [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nPost filtering unreachable actions:  [10%] [20%] [30%] [40%] [50%] [60%] [70%] [80%] [90%] [100%]\nNo semaphore facts found, returning\n\u001b[01;34mNo analytic limits found, not considering limit effects of goal-only operators\u001b[00m\nInitial heuristic = 13.000, admissible cost estimate 0.000\nb (12.000 | 0.001)b (11.000 | 0.005)b (10.000 | 0.007)b (9.000 | 0.017)b (8.000 | 0.019)b (7.000 | 0.021)b (6.000 | 0.027)\nResorting to best-first search\nRunning WA* with W = 5.000, not restarting with goal states\nb (12.000 | 0.001)b (11.000 | 0.005)b (10.000 | 0.007)b (9.000 | 0.011)b (7.000 | 0.013)b (6.000 | 0.019)b (5.000 | 0.025)b (3.000 | 0.027)b (2.000 | 0.031)b (1.000 | 0.032)(G)\n; No metric specified - using makespan\n\n; Plan found with metric 0.033\n; States evaluated so far: 1168\n; States pruned based on pre-heuristic cost lower bound: 0\n; Time 0.56\n0.000: (unstack d h)  [0.001]\n0.001: (put-down d)  [0.001]\n0.002: (unstack h f)  [0.001]\n0.003: (stack h c)  [0.001]\n0.004: (pick-up d)  [0.001]\n0.005: (stack d f)  [0.001]\n0.006: (unstack a g)  [0.001]\n0.007: (put-down a)  [0.001]\n0.008: (unstack g e)  [0.001]\n0.009: (stack g b)  [0.001]\n0.010: (pick-up e)  [0.001]\n0.011: (stack e h)  [0.001]\n0.012: (pick-up a)  [0.001]\n0.013: (stack a g)  [0.001]\n0.014: (unstack e h)  [0.001]\n0.015: (put-down e)  [0.001]\n0.016: (unstack h c)  [0.001]\n0.017: (put-down h)  [0.001]\n0.018: (pick-up e)  [0.001]\n0.019: (stack e h)  [0.001]\n0.020: (pick-up c)  [0.001]\n0.021: (stack c a)  [0.001]\n0.022: (unstack e h)  [0.001]\n0.023: (put-down e)  [0.001]\n0.024: (pick-up h)  [0.001]\n0.025: (stack h c)  [0.001]\n0.026: (pick-up e)  [0.001]\n0.027: (stack e h)  [0.001]\n0.028: (unstack d f)  [0.001]\n0.029: (put-down d)  [0.001]\n0.030: (pick-up f)  [0.001]\n0.031: (stack f e)  [0.001]\n0.032: (pick-up d)  [0.001]\n0.033: (stack d f)  [0.001]\n\n * All goal deadlines now no later than 0.033\nb (0.000 | 0.033)"
+      },
+      "output_type": "log",
+      "stderr": "",
+      "stdout": ""
+    },
+    "status": "ok"
+  },
+  "error": null,
+  "domain": "blocksworld"
+}

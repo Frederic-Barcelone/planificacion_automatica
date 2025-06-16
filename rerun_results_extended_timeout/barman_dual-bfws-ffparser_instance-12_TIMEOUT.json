@@ -1,0 +1,25 @@
+{
+  "domain": "barman",
+  "planner": "dual-bfws-ffparser",
+  "problem": "instance-12.pddl",
+  "timestamp": "2025-06-14T01:23:00.585527",
+  "timeout_used": 3600,
+  "solved": false,
+  "time": 4003.551108121872,
+  "plan": [],
+  "plan_length": 0,
+  "raw": {
+    "result": {
+      "call": "timeout 30 planutils run dual-bfws-ffparser -- domain problem plan",
+      "output": {
+        "plan": ""
+      },
+      "output_type": "generic",
+      "stderr": "",
+      "stdout": " --- OK.\n Match tree built with 3318 nodes.\n\nPDDL problem description loaded: \n\tDomain: BARMAN\n\tProblem: PROB\n\t#Actions: 3318\n\t#Fluents: 444\nGoals found: 15\nGoals_Edges found: 15\nStarting search with 1-BFWS...\n--[15 / 0]--\n--[15 / 1]--\n--[15 / 3]--\n--[15 / 6]--\n--[15 / 7]--\n--[15 / 8]--\n--[15 / 9]--\n--[15 / 10]--\n--[15 / 11]--\n--[15 / 12]--\n--[15 / 13]--\n--[15 / 14]--\n--[14 / 0]--\n--[14 / 14]--\n--[14 / 15]--\n--[13 / 0]--\n--[13 / 13]--\n--[12 / 0]--\n--[12 / 2]--\n--[12 / 3]--\n--[12 / 5]--\n--[12 / 9]--\n--[12 / 10]--\n--[12 / 11]--\n--[12 / 12]--\n--[12 / 13]--\n--[12 / 14]--\n--[12 / 15]--\n--[11 / 0]--\n--[11 / 15]--\n--[11 / 16]--\n--[11 / 17]--\n--[11 / 18]--\n--[11 / 19]--\n--[11 / 20]--\nTotal time: 0.123208\nNodes generated during search: 9478\nNodes expanded during search: 9173\nPlan found with cost: NOTFOUND\nFast-BFS search completed in 0.123208 secs\nStarting search with BFWS(novel,land,h_(add)ff)...\nLandmarks found: 33\nLandmarks_Edges found: 97\n--[97 / 4294967295]--\n--[97 / 510]--\n--[97 / 300]--\n--[97 / 201]--\n--[95 / 201]--\n--[95 / 164]--\n--[94 / 164]--\n--[94 / 135]--\n--[91 / 135]--\n--[88 / 135]--\n--[87 / 135]--\n--[87 / 126]--\n--[84 / 126]--\n--[81 / 126]--\n--[78 / 126]--\n--[78 / 116]--\n--[78 / 114]--\n"
+    },
+    "status": "ok"
+  },
+  "error": "Extended timeout reached",
+  "progress_info": {}
+}
